@@ -1,0 +1,45 @@
+DOCS: https://docs.google.com/document/d/1XCwyCrtfw26IZaVc4tMrDxsdFE-fQ4jdsk_ixVTF3eM/edit?usp=sharing
+
+Análise e Definição de Dataset para Projeto de Machine Learning
+Definição e Descrição da Base de Dados
+
+
+1. Informações Básicas
+Nome do dataset: Heart Disease UCI
+Fonte (link): https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data
+Dimensões (linhas x colunas): 1025 linhas x 14 colunas
+Tamanho em MB: Cerca de 0.03 MB (é um arquivo bem pequeno e leve).
+
+
+2. Problema de Machine Learning
+Tipo: [X] Classificação [ ] Regressão
+Variável alvo (target): A coluna target.
+Número de classes (se classificação): 2 classes.
+1 = O paciente possui doença cardíaca.
+0 = O paciente não possui doença cardíaca.
+Distribuição do target: É um dataset bem balanceado. Aproximadamente 51.3% dos pacientes têm a doença (target=1) e 48.7% não têm (target=0), o que é ótimo para treinar um modelo.
+
+
+3. Qualidade dos Dados
+% valores faltantes: 0% na versão do link fornecido. É um dataset já limpo, ideal para começar.
+Tipos de variáveis:
+Numéricas contínuas: age (idade), trestbps (pressão sanguínea em repouso), chol (colesterol), thalach (frequência cardíaca máxima), oldpeak (depressão do segmento ST).
+Categóricas: sex (sexo), cp (tipo de dor no peito), fbs (açúcar no sangue em jejum), restecg (resultados eletrocardiográficos), exang (angina induzida por exercício), slope (inclinação do segmento ST), ca (número de vasos principais coloridos por fluoroscopia), thal (estado do coração), e a própria target.
+Datas: Nenhuma.
+Texto: Nenhuma.
+
+
+4. Justificativa
+Por que escolheram este dataset?
+Escolhemos este dataset por ser um dos mais clássicos e recomendados para iniciantes em Machine Learning. Ele é fácil de entender, bem documentado e possui uma mistura ideal de variáveis numéricas e categóricas, permitindo a aplicação de diversas técnicas de pré-processamento e modelagem. Além disso, o problema de classificação binária (prever "sim" ou "não") é um ponto de partida perfeito para aprender os fundamentos da área.
+
+Qual problema real vocês querem resolver?
+O problema real é o diagnóstico preditivo de doenças cardíacas. Queremos construir um modelo de Machine Learning que, com base em dados clínicos de um paciente (como idade, sexo, nível de colesterol, resultados de exames), seja capaz de classificar se esse paciente tem ou não uma doença cardíaca. Um modelo assim poderia servir como uma ferramenta de apoio a médicos para um pré-diagnóstico rápido.
+
+Que insights esperam encontrar?
+Esperamos identificar quais são os fatores de risco mais importantes para o desenvolvimento de doenças cardíacas. Por exemplo:
+O nível de colesterol (chol) ou a pressão sanguínea (trestbps) são os indicadores mais fortes?
+A idade (age) e o sexo (sex) têm um impacto significativo?
+Qual tipo de dor no peito (cp) está mais associado a um diagnóstico positivo?
+Esses insights podem ajudar a entender melhor a doença e a focar em exames preventivos mais eficazes.
+
